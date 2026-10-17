@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <globals>
-  <subjects>
-    <int name="rpm" value="3250"/>
-    <int name="boost" value="85"/>
-    <int name="speed" value="86"/>
-    <string name="gear" value="3"/>
-  </subjects>
+    <api />
+    <consts />
+    <fonts />
+    <styles />
+    <subjects />
+    <images />
 </globals>

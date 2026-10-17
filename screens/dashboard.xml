@@ -1,40 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<screen>
-  <view style_bg_color="0x050607" style_bg_opa="255">
-    <lv_label text="VAGbit" x="8" y="4" style_text_color="0xffffff"/>
-    <lv_label text="PERFORMANCE" x="218" y="5" style_text_color="0x00aeef"/>
-    <lv_obj x="5" y="24" width="105" height="106" style_bg_color="0x0e1114" style_bg_opa="255" style_radius="52" style_border_width="1" style_border_color="0x293038" style_pad_all="0" scrollable="false">
-      <lv_arc x="8" y="8" width="89" height="89" min_value="0" max_value="8000" value="3250" rotation="135" bg_start_angle="0" bg_end_angle="270" style_arc_color="0x32383e" style_arc_width="3" style_arc_color-indicator="0x00aeef" style_arc_width-indicator="4" style_bg_opa-knob="0" clickable="false"/>
-      <lv_label text="RPM" x="30" y="14" style_text_color="0x858b92"/>
-      <lv_label bind_text="rpm" x="29" y="53" style_text_color="0xffffff"/>
-    </lv_obj>
-    <lv_obj x="210" y="24" width="105" height="106" style_bg_color="0x0e1114" style_bg_opa="255" style_radius="52" style_border_width="1" style_border_color="0x293038" style_pad_all="0" scrollable="false">
-      <lv_arc x="8" y="8" width="89" height="89" min_value="0" max_value="200" value="85" rotation="135" bg_start_angle="0" bg_end_angle="270" style_arc_color="0x32383e" style_arc_width="3" style_arc_color-indicator="0x00aeef" style_arc_width-indicator="4" style_bg_opa-knob="0" clickable="false"/>
-      <lv_label text="BOOST" x="30" y="14" style_text_color="0x858b92"/>
-      <lv_label bind_text="boost" x="29" y="53" style_text_color="0xffffff"/>
-    </lv_obj>
-    <lv_obj x="116" y="24" width="88" height="106" style_bg_color="0x111518" style_bg_opa="255" style_border_width="1" style_border_color="0x283038" style_radius="5" style_pad_all="0" scrollable="false">
-      <lv_label text="SPEED" x="24" y="7" style_text_color="0x858b92"/>
-      <lv_label bind_text="speed" x="32" y="33" style_text_color="0xffffff"/>
-      <lv_label text="km/h" x="26" y="55" style_text_color="0x858b92"/>
-      <lv_label text="GEAR" x="9" y="80" style_text_color="0x858b92"/>
-      <lv_label bind_text="gear" x="68" y="80" style_text_color="0x00aeef"/>
-    </lv_obj>
-    <lv_obj x="5" y="137" width="73" height="29" style_bg_color="0x101316" style_bg_opa="255" style_border_width="0" style_radius="3" style_pad_all="0" scrollable="false">
-      <lv_label text="COOLANT" x="4" y="1" style_text_color="0x92989e"/>
-      <lv_label text="90 C" x="4" y="14" style_text_color="0xffffff"/>
-    </lv_obj>
-    <lv_obj x="84" y="137" width="73" height="29" style_bg_color="0x101316" style_bg_opa="255" style_border_width="0" style_radius="3" style_pad_all="0" scrollable="false">
-      <lv_label text="OIL" x="4" y="1" style_text_color="0x92989e"/>
-      <lv_label text="102 C" x="4" y="14" style_text_color="0xffffff"/>
-    </lv_obj>
-    <lv_obj x="163" y="137" width="73" height="29" style_bg_color="0x101316" style_bg_opa="255" style_border_width="0" style_radius="3" style_pad_all="0" scrollable="false">
-      <lv_label text="INTAKE" x="4" y="1" style_text_color="0x92989e"/>
-      <lv_label text="32 C" x="4" y="14" style_text_color="0xffffff"/>
-    </lv_obj>
-    <lv_obj x="242" y="137" width="73" height="29" style_bg_color="0x101316" style_bg_opa="255" style_border_width="0" style_radius="3" style_pad_all="0" scrollable="false">
-      <lv_label text="BATTERY" x="4" y="1" style_text_color="0x92989e"/>
-      <lv_label text="14.1 V" x="4" y="14" style_text_color="0xffffff"/>
-    </lv_obj>
-  </view>
+<screen permanent="true">
+    <view extends="lv_obj" width="320" height="170" style_bg_color="0x050607" style_bg_opa="100%" style_border_width="0" style_pad_all="0" scrollable="false">
+        <lv_label text="VAGbit" x="10" y="8" style_text_color="0xFFFFFF" />
+        <lv_label text="PERFORMANCE" x="215" y="8" style_text_color="0x00AEEF" />
+
+        <lv_arc x="9" y="32" width="104" height="104" min_value="0" max_value="8000" value="3250" rotation="135" bg_start_angle="0" bg_end_angle="270" style_arc_color="0x252A2E" style_arc_width="4" clickable="false" />
+        <lv_label text="RPM" x="47" y="58" style_text_color="0x92979D" />
+        <lv_label text="3250" x="33" y="82" style_text_color="0xFFFFFF" />
+
+        <lv_obj x="119" y="35" width="82" height="90" style_bg_color="0x101316" style_bg_opa="100%" style_border_width="0" style_radius="5" style_pad_all="0" scrollable="false">
+            <lv_label text="SPEED" x="20" y="6" style_text_color="0x91969C" />
+            <lv_label text="104" x="25" y="29" style_text_color="0xFFFFFF" />
+            <lv_label text="km/h" x="25" y="52" style_text_color="0x91969C" />
+            <lv_label text="GEAR  4" x="14" y="69" style_text_color="0x00AEEF" />
+        </lv_obj>
+
+        <lv_arc x="207" y="32" width="104" height="104" min_value="0" max_value="250" value="165" rotation="135" bg_start_angle="0" bg_end_angle="270" style_arc_color="0x252A2E" style_arc_width="4" clickable="false" />
+        <lv_label text="BOOST" x="233" y="58" style_text_color="0x92979D" />
+        <lv_label text="1.65" x="240" y="82" style_text_color="0xFFFFFF" />
+
+        <lv_label text="COOLANT 90 C" x="8" y="147" style_text_color="0xFFFFFF" />
+        <lv_label text="OIL 104 C" x="100" y="147" style_text_color="0xFFFFFF" />
+        <lv_label text="14.1 V" x="252" y="147" style_text_color="0xFFFFFF" />
+    </view>
 </screen>
