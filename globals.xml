@@ -1,0 +1,8 @@
+<globals>
+  <subjects>
+    <int name="rpm" value="3250"/>
+    <int name="boost" value="85"/>
+    <int name="speed" value="86"/>
+    <string name="gear" value="3"/>
+  </subjects>
+</globals>
